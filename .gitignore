@@ -1,0 +1,36 @@
+# Balam-Agent
+
+# Environment & secrets
+.env
+.env.*
+config.yaml
+
+# HERMES_HOME (runtime state, sessions, DBs, cached config)
+home/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Runtime caches
+audio_cache/
+image_cache/
+logs/
+*.db
+*.db-shm
+*.db-wal
+
+# Aether state
+.aether/
+
+# MCP / Graphify
+.graphify/
+graphify-out/
+
+# Testing
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db

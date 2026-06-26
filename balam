@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Balam-Agent wrapper — sets HERMES_HOME and launches hermes
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export HERMES_HOME="$SCRIPT_DIR/home"
+source "$SCRIPT_DIR/.venv/bin/activate"
+exec hermes "$@"
